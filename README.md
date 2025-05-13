@@ -31,7 +31,7 @@ load_dotenv()
 
 # Configure Twitter platform
 twitter_config = PlatformValueObject(
-    name="twitter",
+    name="twitter", # Using a plain string here might not be the best choice for portability, but I’m not sure.
     max_posts=500,
     source_type=SourceTypeEnum.LIST_TIMELINE,
     source_id="your_list_id",
