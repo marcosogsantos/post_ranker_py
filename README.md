@@ -9,6 +9,7 @@ A Python package for fetching and analyzing posts from different social media pl
 - Get top posts based on engagement
 - Extensible architecture for adding new platforms
 - Support for different source types (e.g., list timelines)
+- Uses RapidAPI for Twitter integration, bypassing the restrictive official Twitter API limits
 
 ## Installation
 
@@ -68,6 +69,8 @@ post_ranker/
 - Python 3.10 or higher
 - python-dotenv
 - Platform-specific API keys (e.g., RapidAPI key or Bearer Token for Twitter)
+
+> **Note:** The official API has become increasingly restrictive, with tighter rate limits and costly access tiers that limit its practicality for many use cases.  RapidAPI, as a marketplace for APIs, allows us to access public Twitter data through various third-party providers, some of which offer free tiers alongside flexible and affordable paid plans.
 
 ## Contributing
 
